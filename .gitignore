@@ -1,3 +1,6 @@
 # idea
 .idea
 *.iml
+
+# Output Directory
+target/
