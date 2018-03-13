@@ -2,6 +2,7 @@ package com.github.yhs0092.springbootdemo.service;
 
 import java.util.List;
 
+import org.apache.servicecomb.provider.rest.common.RestSchema;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,7 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+//@RestController
+@RestSchema(schemaId = "helloService")
 @RequestMapping(path = "hello")
 public class HelloService {
   private static final Logger LOGGER = LoggerFactory.getLogger(HelloService.class);
