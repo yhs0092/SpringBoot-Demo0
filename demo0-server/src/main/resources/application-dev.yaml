@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+property:
+  test0: from_yaml
+  test1: from_yaml
+  test2: from_yaml_${property.test1}
+  test3: from_yaml_dev_${property.test0}

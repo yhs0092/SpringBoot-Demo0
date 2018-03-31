@@ -1,2 +1,12 @@
 server:
   port: 8080
+
+property:
+  test0: from_yml
+  test1: from_yml
+#  test2: from_yml
+  test3: from_yaml_default_${property.test0}
+
+spring:
+  profiles:
+    active: dev
